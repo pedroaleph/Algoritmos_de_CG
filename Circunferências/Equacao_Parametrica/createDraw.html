@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+  <script>
+
+		const xc_global = findGetParameter("xc");
+		const yc_global = findGetParameter("yc");
+		const r_global = findGetParameter("r");
+
+		function findGetParameter(parameterName) {
+			var result = null,
+				tmp = [];
+			location.search
+				.substr(1)
+				.split("&")
+				.forEach(function (item) {
+				  tmp = item.split("=");
+				  if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+				});
+			return result;
+		}
+
+		document.write("<script src='sketch.js' xc='"+xc_global+"' yc='"+yc_global+"' r='"+r_global+"'></scr" + "ipt>");
+
+	</script>
+	
+	
+  
+
+</body></html>
