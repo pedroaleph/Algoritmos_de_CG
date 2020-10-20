@@ -1,2 +1,2 @@
 # Algoritmos_de_CG
-implentação de algortmos usando p5.js, para disciplina computação gráfica
+implentação de algoritmos usando p5.js, para a disciplina computação gráfica
